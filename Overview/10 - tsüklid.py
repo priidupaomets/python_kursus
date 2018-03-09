@@ -76,21 +76,22 @@ while x < 102:
 # ilma jäägita. Kui jagub, siis ei ole algarv ja võime sisemise tsükli lõpetada. Lõpuks trükime teate
 # kui arv oli algarv.
 
-for n in range(1, 100):
-    # Kui tegu on paariarvuga, mis on suurem kui 2, või number == 1, siis võime selle vahele jätta
+for n in range(1, 100):        # Genereerime numbrid vahemikus 1..100
+    # Kui tegu on paarisarvuga, mis on suurem kui 2, või number == 1, 
+    # siis võime selle vahele jätta
     if (n % 2 == 0 and n > 2) or n == 1: 
         continue
 
-    is_prime = True
-    for i in range(3, n):
-        if n % i == 0:
-            is_prime = False
+    is_prime = True            # Eeldame, et meil on tegu algarvuga
+    for i in range(2, n):      # Läbime vahemiku 3..n (hetkel vaadeldav arv)
+        if n % i == 0:         # Kui vaadeldav arv jagub mõne väiksemaga...
+            is_prime = False   # ... siis ei ole tegu algarvuga
             break
 
-    if is_prime:
+    if is_prime:               # Kui oli algarv, trükime selle välja
         print(str(n) + " on algarv")
-
         
+
 # Tsükkel sisendi saamiseks
 while True:
     sisend = input("Palun sisesta number. Tsükli lõpetamiseks vajuta ENTER: ")
@@ -99,3 +100,10 @@ while True:
         break
 
     print("Sa trükkisid: " + sisend)
+
+# Fibonacci jada teada saamine
+a, b = 0, 1
+while b < 1000:
+    print(b, end=' ', flush=True)
+    a, b = b, a + b
+print() # Lisame reavahetuse

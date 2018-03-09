@@ -1,0 +1,3 @@
+def tere():
+    print("Tere")
+    
