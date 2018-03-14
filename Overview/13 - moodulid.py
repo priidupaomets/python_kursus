@@ -17,6 +17,7 @@ def main():
 def message():
     print(f"Python v{platform.python_version()}")
     print(f"Argumendid: {argv}") # Trükime käsurea argumendid
+    print(f"Juhuslik arv vahemikus [0..50]: {randint(0, 51)}")
     print()
 
 # Sedasi kutsume välja main() funktsiooni
