@@ -15,7 +15,7 @@ print(next(iteraator)) # 2
 print(next(iteraator)) # 3
 print(next(iteraator)) # 4
 print(next(iteraator)) # 5
-print(next(iteraator)) # põhjustab StopIteration vea
+print(next(iteraator)) # põhjustab StopIteration vea, mis lõpetab edasi mineku
 
 
 #
@@ -37,7 +37,7 @@ print(next(mygenerator)) # d
 print(next(mygenerator)) # e
 print(next(mygenerator)) # f
 print(next(mygenerator)) # g
-print(next(mygenerator)) # StopIteration viga
+print(next(mygenerator)) # StopIteration viga, mis lõpetab edasi mineku
 
 
 # Tavaline funktsioon andmehulga tagurpidi keeramiseks
