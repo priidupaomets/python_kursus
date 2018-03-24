@@ -168,3 +168,6 @@ vaal = Vaal()
 tõuse_lendu(papagoi) # Trükib 'Papagoi lendab'
 tõuse_lendu(lennuk)  # Trükib 'Lennuk lendab'
 tõuse_lendu(vaal)    # Viga: `'Vaal' object has no attribute 'lenda'`
+
+
+
