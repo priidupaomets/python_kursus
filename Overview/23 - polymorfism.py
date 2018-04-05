@@ -37,14 +37,14 @@ print("-"*30)
 # Sama asi meetodi üle kirjutamisega
 #
 
-class Eellane:
+class Eellane2:
     def __init__(self, nimi):
         self.nimi = nimi
 
     def trüki(self):
         print("Eellase funktsioon")
 
-class Järglane(Eellane):      
+class Järglane2(Eellane2):      
     def __init__(self, nimi):
         super().__init__(nimi)    # Kutsume välja eellasklassi konstruktori
 
@@ -52,15 +52,15 @@ class Järglane(Eellane):
         #super().trüki()          # Soovi korral saaks välja kutsuda ka eelase oma
         print("Järglase funktsioon")
 
-def töötle(obj: Eellane):
+def töötle2(obj: Eellane):
     print(f"{obj.nimi}")
     obj.trüki()
 
-obj1 = Eellane("Eellane")
-obj2 = Järglane("Järglane")
+obj1 = Eellane2("Eellane")
+obj2 = Järglane2("Järglane")
 
-töötle(obj1)
-töötle(obj2)
+töötle2(obj1)
+töötle2(obj2)
 
 print("-"*30)
 
@@ -103,38 +103,38 @@ print("-"*30)
 
 from abc import ABCMeta, abstractmethod
 
-class Loom (metaclass = ABCMeta):
+class Loom2(metaclass = ABCMeta):
     @abstractmethod
     def häälitse(self):
         pass
 
-class Koer(Loom):
+class Koer2(Loom2):
     def häälitse(self):
         self.haugu()
 
     def haugu(self):
         print("Haugu")
 
-class Kass(Loom):
+class Kass2(Loom2):
     def häälitse(self):
         self.nurru()
         
     def nurru(self):
         print("Nurru")
 
-class Hobune(Loom):
+class Hobune2(Loom2):
     def häälitse(self):
         print("Hirnu")
         
-class Lõvi(Loom):
+class Lõvi2(Loom2):
     pass
 #    def häälitse(self):
 #        print("Möirga")
 
 
-# loom = Loom()
-# kass = Kass()
-# lõvi = Lõvi()
+# loom = Loom2()
+# kass = Kass2()
+# lõvi = Lõvi2()
 
 # loom.häälitse()
 # kass.häälitse()
