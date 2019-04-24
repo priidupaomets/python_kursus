@@ -1,3 +1,4 @@
+# coding=utf-8
 # # vigane variant
 def isprime(n):
     for i in range(n):

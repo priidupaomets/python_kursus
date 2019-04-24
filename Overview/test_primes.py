@@ -1,3 +1,4 @@
+# coding=utf-8
 import unittest
 from primes import isprime
 
@@ -38,6 +39,6 @@ class PrimesTestCase(unittest.TestCase):
     #     """Is a negative number correctly determined not to be prime?"""
     #     for index in range(-1, -10, -1):
     #         self.assertFalse(isprime(index), msg=f'{index} should not be determined to be prime')
-        
+
 if __name__ == '__main__':
     unittest.main()
